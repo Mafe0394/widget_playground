@@ -79,13 +79,8 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Text('Item 1'),
             color: Colors.red,
           ),
-          Flexible(
-            /* the default is loose, the widget should keeps its size and using it in the surrounding
-            row or column. With tight, the widget resizes itself taking all the space it can get,
-            even ignoring the widget width if it was defined */
-            fit: FlexFit.tight,
-            /* flex specify how much of the available space should the widget take, for example, with flex:2 in one
-            of the widgets and flex:1 in the other one, the first one will be as twice as big as the second container*/
+          Expanded(
+            /* Expanded is basically a Flexible widget with fit tight */
             flex: 5,
             child: Container(
               height: 100,
@@ -94,7 +89,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           Flexible(
-            fit: FlexFit.loose,
+            fit: FlexFit.tight,
             /** flex:1 is the defaul */
             flex: 1,
             child: Container(
