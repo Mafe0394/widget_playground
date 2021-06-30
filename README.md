@@ -1,6 +1,6 @@
 # widget_playground
 
-A new Flutter project.
+This flutter project allows us to dive into Expanded and Flexible, two widgets useful to manage the available space in the screen.
 
 ## Getting Started
 
